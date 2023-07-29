@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Merienda:wght@400;700&family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section_header{
+    font-size: 2rem;
+    font-weight: 600;
+    color:#fff;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width:100%;
+    display:flex;
+}
+nav{
+    max-width: 1200px;
+    margin:auto;
+    padding:2rem 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#deb887;
+}
+#cart-icon{
+    font-size: 1.8rem;
+    cursor:pointer;
+    color:#deb887; 
+}
+.nav_links{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    gap:2rem;
+}
+.link a{
+    font-weight: 500;
+    color:black;
+    transition:0.3s;
+}
+.link a:hover{
+    color:#deb887;
+}
+.page-content{
+    background-image: url(img/singleroom.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.change{
+    font-size: 15px; 
+}
+.booking_shop{
+    position:absolute;
+    bottom:15rem;
+    left:50%;
+    transform: translateX(-50%);
+    width:calc(100% - 6rem);
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+}
+.booking_shop form{
+    width:100%;
+    flex:1;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:1rem;
+}
+.booking_shop .input_group{
+    width:100%;
+    position:relative;
+}
+.booking_shop label{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:black;
+    pointer-events: none;
+    transition:0.3s;
+}
+.booking_shop input{
+    width:100%;
+    padding:10px 0;
+    font-size: 1rem;
+    outline:none;
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    color:black;
+}
+.booking_shop input:focus ~ label{
+    font-size: 0.8rem;
+    top:0;
+}
+.booking_shop .form_group p{
+    margin-top:0.5rem;
+    font-size: 0.8rem;
+    color:black;
+}
+.booking_shop .btn{
+    padding:1rem;
+    outline:none;
+    border:none;
+    font-size: 1.5rem;
+    color:#fff;
+    background-color:#deb887;
+    border-radius: 100%;
+    cursor:pointer;
+    transition:0.3s;
+}
+.booking_shop .btn:hover{
+    background-color: gold;
+}
+.header_content{
+    max-width: 600px;
+    padding: 5rem 2rem;
+}
+.header_content h1{
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color:#fff;
+}
+.hehee{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+#search-input{
+    width:60%;
+    max-width: 400px;
+    padding:10px 20px;
+    border:none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color:#333;
+}
+#search-button{
+    padding:10px 20px;
+    background-color: #deb887;
+    color:#fff;
+    border:none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor:pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.search-results{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height:100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+.search-result img{
+    width:100%;
+    object-fit:cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.search-result:hover img{
+    opacity:0.8;
+}
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color:#333;
+    display:block;
+    padding:10px;
+    text-transform: capitalize;
+}
+#show-more-button{
+    background-color: #deb887;
+    font-size: 18px;
+    border:none;
+    color:#fff;
+    padding:10px 20px;
+    text-align: center;
+    display:block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor:pointer;
+    display:none;
+}
+@media screen and (max-width:768px) {
+    .search-results{
+        padding:20px;
+    }
+    .search-result{
+        width:45%;
+    }
+}
+@media screen and (max-width:480px){
+    .search-result{
+        width:100%;
+    }
+}

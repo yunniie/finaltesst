@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Merienda:wght@400;700&family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section_header{
+    font-size: 2rem;
+    font-weight: 600;
+    color:#fff;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width:100%;
+    display:flex;
+}
+nav{
+    max-width: 1200px;
+    margin:auto;
+    padding:2rem 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#deb887;
+}
+#cart-icon{
+    font-size: 1.8rem;
+    cursor:pointer;
+    color:#deb887; 
+}
+.nav_links{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    gap:2rem;
+}
+.link a{
+    font-weight: 500;
+    color:black;
+    transition:0.3s;
+}
+.link a:hover{
+    color:#deb887;
+}
+.header_container{
+    padding:1rem 1rem 5rem 1rem;
+}
+.header_image_container{
+    position:relative;
+    min-height: 500px;
+    background-image: linear-gradient(to right, rgba(44,56,85,.9), rgba(100,125,187,.1)),
+    url("img/Untitled-design-1-1.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+.header_content{
+    max-width: 600px;
+    padding: 5rem 2rem;
+}
+.header_content h1{
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color:#fff;
+}
+.header_content p{
+    color: #fff;
+}
+.booking_container{
+    position:absolute;
+    bottom:-5rem;
+    left:50%;
+    transform: translateX(-50%);
+    width:calc(100% - 6rem);
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+}
+.booking_container form{
+    width:100%;
+    flex:1;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:1rem;
+}
+.booking_container .input_group{
+    width:100%;
+    position:relative;
+}
+.booking_container label{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:black;
+    pointer-events: none;
+    transition:0.3s;
+}
+.booking_container input{
+    width:100%;
+    padding:10px 0;
+    font-size: 1rem;
+    outline:none;
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    color:black;
+}
+.booking_container input:focus ~ label{
+    font-size: 0.8rem;
+    top:0;
+}
+.booking_container .form_group p{
+    margin-top:0.5rem;
+    font-size: 0.8rem;
+    color:black;
+}
+.booking_container .btn{
+    padding:1rem;
+    outline:none;
+    border:none;
+    font-size: 1.5rem;
+    color:#fff;
+    background-color:#deb887;
+    border-radius: 100%;
+    cursor:pointer;
+    transition:0.3s;
+}
+.booking_container .btn:hover{
+    background-color: gold;
+}
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #deb887;
+    text-align: center;
+}
+.exclu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:30px;
+}
+.exclu div img{
+    width: 100%;
+    height:60%;
+    border-radius: 10px;
+}
+.cta{
+    margin: 80px 0;
+    background-image:url("img/The-Worlds-Most-Exceptionally-Designed-Luxury-Hotel-Lobbies-4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color:#fff;
+}
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.cta-btn{
+    background: #deb887;
+    color:#fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.award-winning-hotel h1{
+    color:#deb887;
+    font-size: 40px;
+    text-align: center;
+    padding:3rem;
+}
+.main-hotel{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap:1.5rem;
+}
+.inner-award{
+    position: relative;
+}
+.info{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+.inner-award h2{
+    font-size: 30px;
+    padding:1rem;
+    color:#deb887;
+}
+.inner-award p {
+    font-size: 1.3rem;
+    padding:1rem;
+    color:grey;
+}
+.btn{
+    color: #deb887;
+}
+#product1{
+    text-align: center;
+    color:#deb887;
+    margin-top: 20px;
+}
+#product1 .pro-container{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+#product1 .pro{
+    width:23%;
+    min-width:250px;
+    padding: 10px 12px;
+    border: 1px solid #deb887;
+    border-radius: 20px;
+    cursor:pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin:15px ;
+    transition:0.2s ease;
+    position:relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding:10px 0;
+}
+#product1 .pro .des span{
+    color: grey;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top:7px;
+    color: black;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color:rgb(243,181,25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:#088178;
+}
+#product1 .pro .cart{
+    width:40px;
+    height:40px;
+    border-radius: 50px;
+    background-color: #deb887;
+    font-weight: 500;
+    color:#fff;
+    border:1px solid #cce7d0;
+    position:absolute;
+    bottom:20px;
+    right:10px;
+}
+.backtop{
+    width:50px;
+    height:50px;
+    background:#cd5c5c;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom:40px;
+    right:20px;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s ;
+}
+.backtop.active{
+    bottom:32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+#prodetails{
+    display:flex;
+    margin-top:20px;
+
+}
+#prodetails .single-pro-image{
+    width:40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display:flex;
+    justify-content: space-evenly;
+}
+.small-img-col{
+    flex-basis:24%;
+    cursor:pointer;
+}
+.small-img{
+    width:100%;
+    height:80%;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding:40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display:block;
+    padding:5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details button{
+    background:#deb887;
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+    padding:10px 30px;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
